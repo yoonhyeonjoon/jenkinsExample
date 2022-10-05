@@ -2,15 +2,26 @@ pipeline {
 
   agent any
   stages{
-    stage('version'){
+    stage('version - check'){
       steps{ 
+        bat 'kotlin -version'
         bat 'python3 --version'
+        bat 'java --version'
       }
     }
-    stage('hello'){
+    stage('python-stage'){
       steps{ 
         bat 'python hello.py'
       }
     }
+            
+    stage('kotlin-stage'){
+      steps{ 
+        bat 'kotlinc kotlinTest.kt -d kotlinTest.jar'
+        bat 'kotlin -classpath kotlinTest.jar kotlinTestKt'
+      }
+    }
+    
+    
   }
 }
