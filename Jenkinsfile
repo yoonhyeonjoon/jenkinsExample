@@ -20,14 +20,20 @@ pipeline {
         bat 'kotlin -classpath kotlinTest.jar KotlinTestKt'
       }
     }
-    
-    
-    stage('kotlin-stage'){
+        
+    stage('java-stage'){
       steps{ 
         bat 'javac JavaTest.java'
         bat 'java JavaTest'
       }
-    }    
+    }
+    
+    stage('c-stage'){
+      steps{ 
+        bat 'javac JavaTest.java'
+        bat 'java JavaTest'
+      }
+    }
     
   }
 }
