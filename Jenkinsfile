@@ -6,6 +6,8 @@ pipeline {
       steps{         
         bat 'python3 --version'
         bat 'java --version'
+        bat 'kotlin -version'
+        bat 'scala -version'
       }
     }
     stage('python-stage'){
