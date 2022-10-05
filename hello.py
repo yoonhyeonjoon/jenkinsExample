@@ -24,15 +24,7 @@ def dfs(x, y, d, cnt):
     visit[x][y] = 0
  
  
-for tc in range(1, int(input()) + 1):
-    N = int(input())
-    maps = [list(map(int, input().split())) for _ in range(N)]
-    visit = [[0] * N for _ in range(N)]
-    dp = [[[9999] * 4 for _ in range(N)] for _ in range(N)]
-    ans = 9999
-    sx, sy = 0, -1
-    dfs(N-1, N-1, 1, 0)
-    sx, sy = N-1, N
-    dp = [[[9999] * 4 for _ in range(N)] for _ in range(N)]
-    dfs(0, 0, 3, 0)
-    print(f'#{tc} {ans}')
+print(f'run script from Jenkins')
+
+    
+    
