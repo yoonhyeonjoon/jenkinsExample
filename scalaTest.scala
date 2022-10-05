@@ -47,5 +47,8 @@ object futureTest extends App {
     true
   })
 
+  
+    println("scala test complete")
+
 
 }
