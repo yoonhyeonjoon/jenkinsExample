@@ -22,5 +22,12 @@ pipeline {
     }
     
     
+    stage('kotlin-stage'){
+      steps{ 
+        bat 'javac JavaTest.java'
+        bat 'java JavaTest'
+      }
+    }    
+    
   }
 }
