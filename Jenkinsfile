@@ -17,7 +17,7 @@ pipeline {
     stage('kotlin-stage'){
       steps{ 
         bat 'kotlinc kotlinTest.kt -d kotlinTest.jar'
-        bat 'kotlin -classpath kotlinTest.jar otlinTestKt'
+        bat 'kotlin -classpath kotlinTest.jar KotlinTestKt'
       }
     }
     
