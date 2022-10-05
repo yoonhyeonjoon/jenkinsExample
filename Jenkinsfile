@@ -3,8 +3,7 @@ pipeline {
   agent any
   stages{
     stage('version - check'){
-      steps{ 
-        bat 'kotlin -version'
+      steps{         
         bat 'python3 --version'
         bat 'java --version'
       }
