@@ -28,10 +28,10 @@ pipeline {
       }
     }
     
-    stage('c-stage'){
+    stage('scala-stage'){
       steps{ 
-        bat 'javac JavaTest.java'
-        bat 'java JavaTest'
+        bat 'scalac scalaExample.scala'
+        bat 'scala futures.futureTest'
       }
     }
     
