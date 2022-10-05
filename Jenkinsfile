@@ -33,7 +33,7 @@ pipeline {
     stage('scala-stage'){
       steps{ 
         bat 'scalac scalaExample.scala'
-        bat 'scala futures.scalaTest'
+        bat 'scala futures.futureTest'
       }
     }
     
