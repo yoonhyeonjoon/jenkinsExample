@@ -1,4 +1,4 @@
-env.MYTOOL_VERSION = '1.33'
+MYTOOL_VERSION = '1.33'
 env.anyEnviromentMessageFromThisForm = 'this is anything string for just showing cmd without any plan'
 // node {
 //   sh '/usr/local/mytool-$MYTOOL_VERSION/bin/start'
