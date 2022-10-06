@@ -1,9 +1,22 @@
+  env.MYTOOL_VERSION = '1.33'
+// node {
+//   sh '/usr/local/mytool-$MYTOOL_VERSION/bin/start'
+// }
+
+//   test1["there"] = {
+//     stage("there"){
+//       println($MYTOOL_VERSION)
+//     }
+//   }
+
 pipeline {
 
+  
   agent any
   stages{
     stage('version - check'){
       steps{         
+        bat '$MYTOOL_VERSION'
         bat 'python3 --version'
         bat 'java --version'
         bat 'kotlin -version'
