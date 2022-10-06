@@ -1,4 +1,5 @@
-  env.MYTOOL_VERSION = '1.33'
+env.MYTOOL_VERSION = '1.33'
+env.anyEnviromentMessageFromThisForm = 'this is anything string for just showing cmd without any plan'
 // node {
 //   sh '/usr/local/mytool-$MYTOOL_VERSION/bin/start'
 // }
@@ -18,6 +19,8 @@ pipeline {
       steps{         
 //         println("myTestxx")
         println("$MYTOOL_VERSION")
+        println("$anyEnviromentMessageFromThisForm")
+        println("$anyEnviromentMessageFromThisForm")
         bat 'python3 --version'
         bat 'java --version'
         bat 'kotlin -version'
