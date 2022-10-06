@@ -16,7 +16,8 @@ pipeline {
   stages{
     stage('version - check'){
       steps{         
-        println($MYTOOL_VERSION)
+        println("myTestxx")
+//         println('$MYTOOL_VERSION')
         bat 'python3 --version'
         bat 'java --version'
         bat 'kotlin -version'
